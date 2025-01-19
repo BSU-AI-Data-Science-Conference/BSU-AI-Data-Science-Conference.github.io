@@ -1,70 +1,143 @@
 <!DOCTYPE html>
-<html lang='en'>
-
+<html lang="en">
 <head>
-    <base href="..">
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
-    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <meta name="description" content="Conference Template">
-    <meta name="resource-type" content="document">
-    <meta name="distribution" content="global">
-    <meta name="KeyWords" content="Conference">
-    <title>Directions | Conference Template</title>
+  <title>BSU AI & Data Conf</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    /* .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    } */
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: auto}
+    
+    /* Set gray background color and 100% height */
+    /* .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    } */
+    
+    /* Set black background color, white text and some padding */
+    /* footer {
+      background-color: #555;
+      color: white;
+      padding: 5px;
+    } */
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
 </head>
-
 <body>
 
-    <div class="banner">
-        <img src="assets/banner.jpg" alt="Conference Template Banner">
-        <div class="top-left">
-            <span class="title1">Conference</span><span class="title2">Template</span> <span class="year">2525</span>
+<!-- <nav class="navbar navbar-inverse"> </nav> -->
+
+
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-md-1 sidenav"></div>
+    <div class="col-md-10"> 
+
+      <nav class="navbar navbar-expand-sm bg-warning navbar-dark">
+        <div class="container-fluid">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" title="Conference Home Page" href="home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" title="About" href=".">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" title="Register for the Conference" href="registration">Registration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" title="Conference Program" href="program">Program</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" title="Conference Venue" href="venue">Venue</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" title="Contact" href="contact">Contact</a>
+            </li>
+          </ul>
         </div>
-        <div class="bottom-right">
-            June 31, 2525 <br> University Name, and City Maybe
-        </div>
+      </nav>
+      </div>
+      <div class="col-md-1 sidenav"></div>
     </div>
-
-    <table class="navigation">
-        <tr>
-            <td class="navigation">
-                <a title="Conference Home Page" href=".">Home</a>
-            </td>
-            <td class="navigation">
-                <a title="Register for the Conference" href="registration">Registration</a>
-            </td>
-            <td class="navigation">
-                <a title="Conference Program" href="program">Program</a> 
-            </td>
-            <td class="navigation">
-                <a class="current" title="Directions to the Conference" href="directions">Directions</a>
-            </td>
-            <td class="navigation">
-                <a title="Conference Flyer" href="flyer">Flyer</a>
-            </td>
-        </tr>
-    </table>
+  </div>
+</div>
 
 
-    <h2>Directions</h2>
-    <p>
-        Here&rsquo;s where you can put directions to the conference,
-        and other information that will help attendees find the location,
-        and find the building, and register, and find local places they can stay, etc.
-        You can embed a <a href="https://www.google.com/maps">Google Maps</a> iframe
-        with directions to the conference like a did below.
-        It can also be helpful to include maps of the campus itself,
-        or pictures of the building the conference will be held in.
-        I&rsquo;ve opted to use a placeholder image of a kitten below.
-    </p>
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-md-1 sidenav"></div>
+    <div class="col-md-10"> 
+      <div class="container text-center">
+          <table border="0" align="center">
+            <tr>
+              <td width="700" align="center" valign="middle">
+                <h3>1st BSU AI & Data Science Conference, 2025</h3>
+              </td>
+            </tr>
+          </table>
+          <img class="img-rounded" src="assets/images/banner-bowie.jpg" width="100%" height="200" align="center" />
+          <p align="right">Date: April 11, 2025 </p>
+      </div>
+      <div class="col-md-1 sidenav"></div>
+    </div>
+  </div>
+</div>
 
-    <iframe class="directions" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d134998.56138929052!2d-121.98776790326531!3d37.869213445646146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808ff431db2f96d1%3A0x8b99d90a20aa67de!2sMt+Diablo!5e0!3m2!1sen!2sus!4v1561787340910!5m2!1sen!2sus"></iframe>
 
-    <img class="center" src="assets/kitten4.jpg" alt="This is just a kitten right now" id="kitten">
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-md-1 sidenav"></div>
+    <div class="col-md-10 text-left">
+        
+        <h2>Directions</h2>
+        <p>
+            Bowie State University is conveniently located near three major airports in the Washington, D.C., and Baltimore area. From Baltimore/Washington International Thurgood Marshall Airport (BWI), the university is approximately 20 miles south taking around 30-40 minutes by car. From Ronald Reagan Washington National Airport (DCA), Bowie State is about 25 miles northeast and can be accessed via US-50 East or the I-495 Beltway, typically taking 40-50 minutes by car. From Washington Dulles International Airport (IAD), the university is around 50 miles east, with the fastest route being VA-267 and the I-495 Beltway, requiring about an hour to drive. Public transportation options include MARC trains and Metrobus routes connecting to nearby Bowie State MARC station for convenient access to campus.
+        </p>
+    
+        <iframe class="directions" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3099.8263418985835!2d-76.76192908838404!3d39.0192747393855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7e8e035da591d%3A0x293334c635ef01d1!2sBowie%20State%20University!5e0!3m2!1sen!2sus!4v1737304191240!5m2!1sen!2sus" ></iframe>
 
-    <footer>
-        &copy; Conference Organizers
-        &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Mike Pierce</a>
-    </footer>
+     </div>
+    <div class="col-md-1 sidenav"></div>
+  </div>
+</div>
+
+<!-- <div class="container text-center">
+  
+</div> -->
+
+<footer class="container-fluid">
+    <div class="col-md-1 sidenav">
+        <!--  -->
+    </div>
+    
+    <div class="col-md-10 text-center">
+      <p>&copy; Department of Computer Science, Bowie State University</p>
+    </div>
+    
+    <div class="col-md-1 sidenav">
+        <!--  -->
+    </div>
+</footer>
 
 </body>
 </html>
+
