@@ -1,70 +1,153 @@
 <!DOCTYPE html>
-<html lang='en'>
-
+<html lang="en">
 <head>
-    <base href="..">
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
-    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <meta name="description" content="Conference Template">
-    <meta name="resource-type" content="document">
-    <meta name="distribution" content="global">
-    <meta name="KeyWords" content="Conference">
-    <title>Directions | Conference Template</title>
+  <title>BSU AI & Data Conf</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    /* .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    } */
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: auto}
+    
+    /* Set gray background color and 100% height */
+    /* .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    } */
+    
+    /* Set black background color, white text and some padding */
+    /* footer {
+      background-color: #555;
+      color: white;
+      padding: 5px;
+    } */
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
 </head>
-
 <body>
 
-    <div class="banner">
-        <img src="assets/banner.jpg" alt="Conference Template Banner">
-        <div class="top-left">
-            <span class="title1">Conference</span><span class="title2">Template</span> <span class="year">2525</span>
+<!-- <nav class="navbar navbar-inverse"> </nav> -->
+
+
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-md-1 sidenav"></div>
+    <div class="col-md-10"> 
+
+      <nav class="navbar navbar-expand-sm bg-warning navbar-dark">
+        <div class="container-fluid">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" title="Conference Home Page" href="home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" title="About" href="about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" title="Register for the Conference" href="registration">Registration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" title="Conference Program" href="program">Program</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" title="Conference Venue" href="venue">Venue</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" title="Contact" href=".">Contact</a>
+            </li>
+          </ul>
         </div>
-        <div class="bottom-right">
-            June 31, 2525 <br> University Name, and City Maybe
-        </div>
+      </nav>
+      </div>
+      <div class="col-md-1 sidenav"></div>
     </div>
-
-    <table class="navigation">
-        <tr>
-            <td class="navigation">
-                <a title="Conference Home Page" href=".">Home</a>
-            </td>
-            <td class="navigation">
-                <a title="Register for the Conference" href="registration">Registration</a>
-            </td>
-            <td class="navigation">
-                <a title="Conference Program" href="program">Program</a> 
-            </td>
-            <td class="navigation">
-                <a class="current" title="Directions to the Conference" href="directions">Directions</a>
-            </td>
-            <td class="navigation">
-                <a title="Conference Flyer" href="flyer">Flyer</a>
-            </td>
-        </tr>
-    </table>
+  </div>
+</div>
 
 
-    <h2>Directions</h2>
-    <p>
-        Here&rsquo;s where you can put directions to the conference,
-        and other information that will help attendees find the location,
-        and find the building, and register, and find local places they can stay, etc.
-        You can embed a <a href="https://www.google.com/maps">Google Maps</a> iframe
-        with directions to the conference like a did below.
-        It can also be helpful to include maps of the campus itself,
-        or pictures of the building the conference will be held in.
-        I&rsquo;ve opted to use a placeholder image of a kitten below.
-    </p>
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-md-1 sidenav"></div>
+    <div class="col-md-10"> 
+      <div class="container text-center">
+          <table border="0" align="center">
+            <tr>
+              <td width="700" align="center" valign="middle">
+                <h3>1st BSU AI & Data Science Conference, 2025</h3>
+              </td>
+            </tr>
+          </table>
+          <img class="img-rounded" src="../assets/images/banner-bowie.jpg" width="100%" height="200" align="center" />
+          <p align="right">Date: April 11, 2025 </p>
+      </div>
+      <div class="col-md-1 sidenav"></div>
+    </div>
+  </div>
+</div>
 
-    <iframe class="directions" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d134998.56138929052!2d-121.98776790326531!3d37.869213445646146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808ff431db2f96d1%3A0x8b99d90a20aa67de!2sMt+Diablo!5e0!3m2!1sen!2sus!4v1561787340910!5m2!1sen!2sus"></iframe>
 
-    <img class="center" src="assets/kitten4.jpg" alt="This is just a kitten right now" id="kitten">
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-md-1 sidenav"></div>
+    <div class="col-md-10 text-left">
+        
+        <h2>Contact Information</h2>
+        <p><strong>Dr. Md Kamruzzaman Sarker</strong></p>
+        <p>Communication Chair<br>
+        1st BSU AI & Data Science Conference (BAIDS)</p>
+        <p><strong>Email:</strong> <a href="mailto:msarker@bowiestate.edu">msarker@bowiestate.edu</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+13018604501">301-860-4501</a></p>
+        <p>Assistant Professor<br>
+        Department of Computer Science<br>
+        Bowie State University</p>
+        <address>
+            Computer Science Building – Room 320<br>
+            14000 Jericho Park Road<br>
+            Bowie, MD 20715-9465, USA
+        </address>
 
-    <footer>
-        &copy; Conference Organizers
-        &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Mike Pierce</a>
-    </footer>
+     </div>
+    <div class="col-md-1 sidenav"></div>
+  </div>
+</div>
+
+<!-- <div class="container text-center">
+  
+</div> -->
+
+<footer class="container-fluid">
+    <div class="col-md-1 sidenav">
+        <!--  -->
+    </div>
+    
+    <div class="col-md-10 text-center">
+      <p>&copy; Department of Computer Science, Bowie State University</p>
+    </div>
+    
+    <div class="col-md-1 sidenav">
+        <!--  -->
+    </div>
+</footer>
 
 </body>
 </html>
+
+
+
